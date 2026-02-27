@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model SafetyLaw {
+  id          String   @id @default(cuid())
+  title       String   // ชื่อกฎหมาย/ประกาศกระทรวง
+  category    String   // หมวดหมู่ เช่น อัคคีภัย, สารเคมี, เครื่องจักร
+  content     String   // เนื้อหากฎหมายฉบับเต็ม
+  lawSource   String   // ลิงก์อ้างอิงจาก safety.ac.th
+  updatedAt   DateTime @updatedAt
+}
