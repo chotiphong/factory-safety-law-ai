@@ -1,0 +1,15 @@
+{
+  "name": "factory-safety-law-ai",
+  "version": "0.1.0",
+  "description": "AI-powered factory safety law and compliance platform by Safety Station School",
+  "main": "index.js",
+  "dependencies": {
+    "next": "latest",
+    "prisma": "latest",
+    "@prisma/client": "latest",
+    "@anthropic-ai/sdk": "latest",
+    "lucide-react": "latest"
+  },
+  "author": "Safety Station School (safety.ac.th)",
+  "license": "MIT"
+}
